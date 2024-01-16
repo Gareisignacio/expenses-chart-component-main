@@ -29,25 +29,27 @@ body {
     body .head .logo {
       padding-top: .5em; }
   body .main {
-    border: 1px solid black;
     background-color: #fffaf5;
     width: 30em;
     height: 28em;
     border-radius: 15px;
     padding: 2em; }
+    body .main h1 {
+      color: #382314; }
     body .main .graphs-box {
       display: flex;
       justify-content: space-around;
       height: 15em;
       align-items: end;
-      border: 1px solid black;
       margin-bottom: .5em; }
       body .main .graphs-box .day {
         padding: 0px .2em;
         display: flex;
         flex-direction: column;
         justify-content: center;
-        align-items: center; }
+        align-items: center;
+        color: #93867b;
+        font-weight: bold; }
         body .main .graphs-box .day .day-amount {
           background: black;
           border-radius: 5px;
@@ -71,5 +73,34 @@ body {
           align-items: center; }
         body .main .graphs-box .day .current-day {
           background-color: #76b5bc; }
+    body .main .total {
+      display: flex;
+      justify-content: space-between;
+      padding: 1em 0em;
+      font-weight: bold; }
+      body .main .total .total-para {
+        color: #93867b; }
+      body .main .total .total-month {
+        font-size: 2em;
+        font-weight: 700;
+        color: #382314; }
+      body .main .total div:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end; }
+        body .main .total div:last-child .last-month-porcentage {
+          font-weight: bold; }
+        body .main .total div:last-child .last-month-para {
+          color: #93867b; }
+
+@media (max-width: 375px) {
+  body .head {
+    width: 25em;
+    margin: 2em 0em;
+    margin-left: 1.5em; }
+  body .main {
+    width: 25em;
+    margin-left: 1.5em; } }
 
 /*# sourceMappingURL=style.css.map */
