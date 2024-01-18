@@ -35,19 +35,20 @@ for (let i = 0; i < data.length; i++){
   dayDiv.classList.add('day');
 
   let dayAmount = document.createElement('p')
-  dayAmount.classList.add(".day-amount");
+  dayAmount.classList.add("day-amount");
 
   let dayPara = document.createElement('p');
 
   let graphDiv = document.createElement('div');
-  graphDiv.classList.add(".graph");
+  graphDiv.classList.add("graph");
 
-  dayAmount.textContent = data[i]["amount"];
+  dayAmount.textContent = '$' + data[i]["amount"];
   dayPara.textContent = data[i]['day'];
 
-  let graphHeight = (data[i]['amount'] * 3);
+  let graphHeight = Math.floor(data[i]['amount'] * 3);
+  console.log(graphHeight)
   
-  graphDiv.style = `height: ${graphHeight}`
+  graphDiv.style = `height: ${graphHeight}px`
 
   dayDiv.appendChild(dayAmount);
   dayDiv.appendChild(graphDiv);
