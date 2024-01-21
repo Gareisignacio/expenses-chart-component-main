@@ -55,6 +55,11 @@ body{
             align-items: center;
             color:hsl(28, 10%, 53%);
             font-weight: bold;
+            &:hover{
+               .day-amount{
+                  visibility: visible;
+                  }
+            }
             .day-amount{
                background: black;
                border-radius: 5px;
@@ -72,9 +77,6 @@ body{
                cursor: pointer;
                &:hover{
                   filter: brightness(120%);
-                  .day-amount{
-                     visibility: visible;
-                  }
                }
             }
             p{
@@ -85,6 +87,9 @@ body{
             }
             .current-day{
                background-color: hsl(186, 34%, 60%) ;
+            }
+            .current-day-amount{
+               visibility: visible;
             }
          }
          
@@ -133,5 +138,4 @@ body{
          margin-left: 1.5em;
       }
    }
-   
 }

@@ -55,4 +55,10 @@ for (let i = 0; i < data.length; i++){
   dayDiv.appendChild(dayPara);
 
   graphBox.appendChild(dayDiv)
+
+  graphDiv.addEventListener("click", ()=>{
+    graphDiv.classList.toggle("current-day")
+    dayAmount.classList.toggle("current-day-amount")
+  })
 }
+

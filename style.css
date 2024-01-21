@@ -50,6 +50,8 @@ body {
         align-items: center;
         color: #93867b;
         font-weight: bold; }
+        body .main .graphs-box .day:hover .day-amount {
+          visibility: visible; }
         body .main .graphs-box .day .day-amount {
           background: black;
           border-radius: 5px;
@@ -66,8 +68,6 @@ body {
           cursor: pointer; }
           body .main .graphs-box .day .graph:hover {
             filter: brightness(120%); }
-            body .main .graphs-box .day .graph:hover .day-amount {
-              visibility: visible; }
         body .main .graphs-box .day p {
           display: flex;
           flex-direction: column;
@@ -75,6 +75,8 @@ body {
           align-items: center; }
         body .main .graphs-box .day .current-day {
           background-color: #76b5bc; }
+        body .main .graphs-box .day .current-day-amount {
+          visibility: visible; }
     body .main .total {
       display: flex;
       justify-content: space-between;
